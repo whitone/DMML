@@ -1,0 +1,186 @@
+<!--
+
+#divLoadCont {
+	position         : absolute                                                                              ;
+	width            : 35%                                                                                   ;
+	height           : 10%                                                                                   ;
+    top              : expression(document.body.scrollTop+(((document.body.clientHeight-offsetHeight)/3)*2)) ;
+    left             : expression(document.body.scrollLeft+((document.body.clientWidth-offsetWidth)/2))      ;
+    background-color : #F5F5F5                                                                               ;
+	border           : 2px black solid                                                                       ;
+	z-index          : 100                                                                                   ;
+	text-align       : center                                                                                ;
+	color            : #C71585                                                                               ;
+	vertical-align   : middle                                                                                ;
+}
+
+A:hover {
+	cursor          : hand  ;
+	text-decoration : blink ;
+}
+
+#title {
+	color          : #FF6347                                 ;
+	letter-spacing : 2pt                                     ;
+	filter         : revealTrans(Duration=0.8, Transition=6) ;
+    text-align     : center                                  ;
+}
+
+.loading {
+	color           : blue               ;
+	font-size       : medium             ;
+	text-decoration : underline overline ;
+ }
+
+#loaded_photos {
+	position : absolute                                                                          ;
+    top      : expression(document.body.scrollTop+((document.body.clientHeight-offsetHeight)/3)) ;
+    left     : expression(document.body.scrollLeft+((document.body.clientWidth-offsetWidth)/4))  ;
+}
+
+#loaded_movies {
+	position : absolute                                                                             ;
+    top      : expression(document.body.scrollTop+((document.body.clientHeight-offsetHeight)/3))    ;
+    left     : expression(document.body.scrollLeft+(((document.body.clientWidth-offsetWidth)/4)*3)) ;
+}
+
+TABLE.big {
+	position : absolute        ;
+	left     : 0               ;
+	border   : 1px green solid ;
+	padding  : 4pt 2pt         ;
+	z-index  : 1               ;
+}
+
+TR {
+	text-align : center            ;
+	border     : 1px #EE82EE solid ;
+}
+
+TH {
+	text-align       : center            ;
+	font-size        : medium            ;
+	color            : red               ;
+	background-color : lightblue         ;
+	border           : 1px #EE82EE solid ;
+}
+
+TD {
+	border           : 1px #32CD32 solid ;
+	text-align       : center            ;
+	background-color : azure             ;
+}
+
+TD.info {
+	border           : 2px #00CED1 solid ;
+	background-color : white             ;
+}
+
+TD.value {
+	border           : 0       ;
+	background-color : #66CDAA ;
+}
+
+TD.value1 {
+	border           : 0       ;
+	background-color : #FAEBD7 ;
+}
+
+TD.attribute {
+	border           : 0       ;
+	background-color : #FFF5EE ;
+}
+
+IMG.thumbs {
+	width  : 60px ;
+	height : 50px ;
+	cursor : hand ;
+}
+
+.photoname {
+	color           : #0000FF   ;
+	font-size       : 14pt      ;
+	text-decoration : underline ;
+	cursor          : hand      ;
+	white-space     : nowrap    ;
+}
+
+.moviename {
+	color       : #0000FF ;
+	font-size   : 14pt    ;
+	white-space : nowrap  ;
+}
+
+TABLE.small {
+	border       : 0       ;
+	white-space  : nowrap  ;
+	font-size    : x-small ;
+    margin-left  : auto    ;
+    margin-right : auto    ;
+}
+
+TABLE.abn {
+    margin-left  : auto    ;
+    margin-right : auto    ;
+}
+
+.titabn {
+	background-color : #ADD8E6 ;
+	border           : 0       ;
+	font-size        : 10pt    ;
+	color            : black   ;
+	cursor           : hand    ;
+}
+
+.nounder {
+	text-decoration : none ;
+}
+
+.noNormal {
+	color  : blue ;
+	cursor : hand ;
+}
+
+TABLE.PhotoInfo {
+	border       : 0       ;
+	white-space  : nowrap  ;
+	font-size    : x-small ;
+}
+
+TABLE.MovieInfo {
+	border       : 0	   ;
+	white-space  : nowrap  ;
+	font-size    : x-small ;
+}
+
+#hidden {
+	display : none ;
+    border  : 0    ;
+}
+
+DIV.counter {
+	display : none ;
+}
+
+BODY.backgroundIMG {
+	background-color : black ;
+}
+
+IMG.Image {
+    width    : expression(document.body.clientWidth + offsetLeft - offsetLeft)  ;
+    height   : expression(document.body.clientHeight + offsetLeft - offsetLeft) ;
+    position : absolute ;
+	top      : 0        ;
+	left     : 0        ;
+	right    : 0		;
+	bottom   : 0		;
+}
+
+IMG.eMail {
+	cursor   : hand     ;
+	position : absolute ;
+    top      : expression(document.body.scrollTop+((document.body.clientHeight-offsetHeight)/2)) ;
+    left     : expression(document.body.scrollLeft+((document.body.clientWidth-offsetWidth)/2))  ;
+}
+
+-->

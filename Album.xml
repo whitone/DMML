@@ -1,0 +1,97 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="Abum-files/Album.xsl"?>
+<!DOCTYPE ALBUM SYSTEM "Album-files/DMML.DTD">
+
+
+<ALBUM>
+
+
+	<GOOD>
+
+
+		<PHOTO 
+			floppy="1"
+
+		>Drei Zinnen<LOCATION
+
+			place="AURONZO DI CADORE"
+				>Auronzo hut
+			</LOCATION>
+
+			<PHOTOINFO
+			>MVC-002X.JPG</PHOTOINFO>
+
+		</PHOTO>
+
+
+		<PHOTO
+            floppy="1"
+
+		>Drei Zinnen<LOCATION
+
+		    place="AURONZO DI CADORE"
+		        >Auronzo hut
+		    </LOCATION>
+
+			<PHOTOINFO
+			>MVC-003X.JPG</PHOTOINFO>
+
+		</PHOTO>
+
+
+		<PHOTO 
+			comment="Sunset on the peaks"
+        	floppy="2"
+
+		>Piccolo Paradiso<LOCATION
+			
+			place="VALSAVARANCHE"
+				>Chabod hut
+			</LOCATION>
+	
+			<PHOTOINFO
+			>MVC-005X.JPG</PHOTOINFO>
+
+		</PHOTO>
+
+
+	</GOOD>
+
+
+	<BAD>
+
+
+		<PHOTO 
+			floppy="1"
+
+		>Drei Zinnen<LOCATION
+
+			place="AURONZO DI CADORE"
+				>Auronzo hut
+			</LOCATION>
+	
+			<PHOTOINFO 
+			>MVC-001X.JPG</PHOTOINFO>
+
+		</PHOTO>
+
+
+		<PHOTO
+			floppy="2"
+
+		>Piccolo Paradiso<LOCATION
+
+			place="VALSAVARANCHE"
+				>Chabod hut
+			</LOCATION>
+	
+			<PHOTOINFO
+			>MVC-004X.JPG</PHOTOINFO>
+
+		</PHOTO>
+
+
+	</BAD>
+
+
+</ALBUM>

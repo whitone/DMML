@@ -1,0 +1,125 @@
+<!-- Digital Mavica Markup Language -->
+
+<!-- ========= The characters =========== -->
+
+<!ENTITY times  "&#215;" >
+
+<!ENTITY agrave "&#224;" >
+<!ENTITY aacute "&#225;" >
+<!ENTITY acirc  "&#226;" >
+<!ENTITY atilde "&#227;" >
+<!ENTITY auml   "&#228;" >
+<!ENTITY aring  "&#229;" >
+
+<!ENTITY aelig	"&#230;" >
+
+<!ENTITY ccedil	"&#231;" >
+
+<!ENTITY egrave	"&#232;" >
+<!ENTITY eacute	"&#233;" >
+<!ENTITY ecirc	"&#234;" >
+<!ENTITY euml	"&#235;" >
+
+<!ENTITY igrave	"&#236;" >
+<!ENTITY iacute	"&#237;" >
+<!ENTITY icirc	"&#238;" >
+<!ENTITY iuml	"&#239;" >
+
+<!ENTITY eth	"&#240;" >
+
+<!ENTITY ntilde	"&#241;" >
+
+<!ENTITY ograve	"&#242;" >
+<!ENTITY oacute	"&#243;" >
+<!ENTITY ocirc	"&#244;" >
+<!ENTITY otilde	"&#245;" >
+<!ENTITY ouml	"&#246;" >
+<!ENTITY oslash	"&#248;" >
+
+<!ENTITY ugrave	"&#249;" >
+<!ENTITY uacute	"&#250;" >
+<!ENTITY ucirc	"&#251;" >
+<!ENTITY udie	"&#252;" >
+
+<!-- ========= The values ============ -->
+
+<!ENTITY photoBig    "1024x768" >
+<!ENTITY photoMedium "640x480"  >
+<!ENTITY movieBig    "320x240"  >
+<!ENTITY movieMedium "160x112"  >
+
+<!ENTITY % photoBig    "1024x768" >
+<!ENTITY % photoMedium "640x480"  >
+<!ENTITY % movieBig    "320x240"  >
+<!ENTITY % movieMedium "160x112"  >
+
+<!ENTITY sizePhotoB	" size = &photoBig; "    >
+<!ENTITY sizePhotoM	" size = &photoMedium; " >
+<!ENTITY sizeMovieB	" size = &movieBig; "    >
+<!ENTITY sizeMovieM	" size = &movieMedium; " >
+
+<!ENTITY % filter	"filter ( polarizer ) #IMPLIED"  >
+
+<!ENTITY % floppy_comment
+ "floppy  CDATA #REQUIRED
+  comment CDATA #IMPLIED"
+>
+
+<!ENTITY % photoInfo
+ 'resolution  CDATA							                 "72"
+  quality 	  ( STANDARD    | FINE          )				 "FINE"
+  orientation ( horizontal  | vertical      )				 "horizontal"
+  size        ( %photoBig;  | %photoMedium; )				 "%photoBig;"
+  color       ( CMYK        | RGB           )				 "RGB"
+  effect 	  ( blackNwhite | solarized | negative | sepia ) #IMPLIED'
+>
+
+<!ENTITY % type
+ 'type ( NORMAL | VOICE | E-MAIL | BITMAP )	"NORMAL"
+  file CDATA						   	    #IMPLIED'
+>
+
+<!ENTITY % allPhotoInfo
+ "%photoInfo;
+  %type;
+  %filter;"
+>
+
+<!ENTITY % movieInfo
+ 'size 	  ( %movieBig;  | %movieMedium; )						      "%movieBig;"
+  effects ( blackNwhite | solarized | negative | sepia | all | some ) #IMPLIED'
+>
+
+<!ENTITY % allMovieInfo
+ "%movieInfo;
+  %filter;"
+>
+
+<!-- ========= The elements ========== -->
+
+<!ELEMENT ALBUM     ( GOOD    , BAD      )              >
+<!ELEMENT GOOD      ( PHOTO*  | MOVIE*   )*             >
+<!ELEMENT BAD       ( PHOTO*  | MOVIE*   )*             >
+<!ELEMENT PHOTO     ( #PCDATA | LOCATION | PHOTOINFO )* >
+<!ELEMENT MOVIE     ( #PCDATA | LOCATION | MOVIEINFO )* >
+<!ELEMENT LOCATION  ( #PCDATA )                         >
+<!ELEMENT PHOTOINFO ( #PCDATA )			                >
+<!ELEMENT MOVIEINFO ( #PCDATA )			                >
+
+<!-- ========= The attributes ========= -->
+
+<!ATTLIST ALBUM
+ camera CDATA "Digital Mavica FD-81"
+>
+
+<!ATTLIST PHOTO %floppy_comment; >
+<!ATTLIST MOVIE %floppy_comment; >
+
+<!ATTLIST LOCATION place CDATA #IMPLIED>
+
+<!ATTLIST PHOTOINFO %allPhotoInfo; >
+
+<!ATTLIST MOVIEINFO
+  %allMovieInfo;
+  duration CDATA '15"'
+>
